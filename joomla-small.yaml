@@ -2,6 +2,19 @@ heat_template_version: 2015-10-15
 
 description: |
  #### Production
+ This stack is intended for low to medium traffic production
+ websites and can be scaled as needed to accommodate future
+ growth.  This stack includes a Cloud Load Balancer, Cloud
+ Database, and a Master server (plus optional secondary
+ servers).  It also includes Cloud Monitoring and Cloud
+ Backups.
+
+ This stack is running the latest version of
+ [Joomla](http://joomla.org/),
+ [nginx](https://www.nginx.com/),
+ and [PHP FPM](http://php-fpm.org/).
+ with a Cloud Database running
+ [MySQL 5.1](http://www.mysql.com/about/).
 
 parameter_groups:
 - label: Joomla Settings
