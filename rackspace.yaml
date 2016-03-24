@@ -1,6 +1,6 @@
 schema-version: 1.0.0
 application-family: CMS
-application-name: joomla
+application-name: Joomla
 application-version: latest
 flavor: Production
 flavor-weight: 1
