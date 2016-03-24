@@ -239,7 +239,7 @@ resources:
         joomla_title: { get_param: joomla_sitename }
         joomla_user: { get_param: joomla_user }
         joomla_user_name: { get_param: joomla_user_name }
-        joomla_user_pass: { get_attr: [joomla_pass, value] }
+        joomla_pass: { get_attr: [joomla_pass, value] }
         joomla_user_email: { get_param: joomla_email }
         phpmyadmin_host: { get_attr: [joomla_database, hostname] }
         phpmyadmin_user: "joomla"
