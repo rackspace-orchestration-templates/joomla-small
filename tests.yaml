@@ -100,13 +100,13 @@ test-cases:
               command_args:
                 - { get_output: server_ip }
                 - { get_output: joomla_public_url }
-    - check_secondary_login:
-        script:
-          commands:
-            - command: "./test/script/joomla.py"
-              command_args:
-                - { get_output: secondary_ips }
-                - { get_output: joomla_public_url }
+    # - check_secondary_login:
+    #     script:
+    #       commands:
+    #         - command: "./test/script/joomla.py"
+    #           command_args:
+    #             - { get_output: secondary_ips }
+    #             - { get_output: joomla_public_url }
     - master_server:
         fabric:
           # Fabric environment settings to use while running envassert script
